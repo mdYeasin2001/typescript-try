@@ -108,3 +108,43 @@ let player: {
 }
 player.name = 'Abdul';
 player.age = 30;
+
+
+
+
+
+// typeScript Interface
+interface Player {
+    club: string,
+    name: string, 
+    salary: number,
+    married: boolean,
+    wife?: string,
+    isPlaying: boolean
+}
+const Harry: Player = {
+    club: 'Real Madrid',
+    name: 'Harry',
+    salary: 450000,
+    married: true,
+    wife: 'Angelina',
+    isPlaying: false
+}
+const Max: Player = {
+    club: 'unKnown',
+    name: 'Max',
+    salary: 34543000,
+    married: false,
+    isPlaying: true
+}
+
+
+function getBonus(player:{salary: number}){
+    return player.salary * 3;
+
+}
+
+function getBonus2(player: Player){
+    return player.salary * 2;
+}
+
