@@ -84,3 +84,27 @@ friends.push('Abdul');
 const mix: (string | number)[] = [3, 'Jon', 5, 'Jam'];
 mix.push(16);
 mix.push('Bala');
+
+
+
+
+
+// apply typeScript on objects
+const friend = {
+    name: 'Harry Potter',
+    age: 23
+}
+friend.name = 'Max';
+// friend.name = 32;
+friend.age = 25;
+// friend.age = 'Twenty Five';
+
+let player: {
+    name: string,
+    age: number,
+} = {
+    name: 'Jon', 
+    age: 23
+}
+player.name = 'Abdul';
+player.age = 30;
