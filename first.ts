@@ -59,3 +59,28 @@ const multiply = (x: number, y: number): number => x * y;
 
 let multiply2: (x: number, y: number) => number;
 multiply2 = (a, b) => a * b;
+
+
+
+
+
+
+
+
+
+// apply typeScript on array
+
+const numbers = [3, 5, 8, 10, 12, 9, 20, 13];
+numbers.push(25);
+// numbers.push('Harry');
+const numbers2: number[] = [34, 54, 32, 66, 88];
+numbers2.push(59);
+// numbers2.push('Potter')
+
+const friends: string[] = ['Harry', 'Max', 'Beo', 'Bill'];
+friends.push('Abdul');
+// friends.push(33);
+
+const mix: (string | number)[] = [3, 'Jon', 5, 'Jam'];
+mix.push(16);
+mix.push('Bala');
