@@ -41,3 +41,21 @@ function add4(firstName: string, lastName: string): string{
 
 const user = add4('Harry', 'Hero'); 
 // const user2: number = add4('Harry', 'Hero'); // show an error because it a string type mistake
+
+
+
+
+
+
+// void function and arrow function 
+function doubleItAndConsoleLogIt(num: number): void{
+    const result: number = num * 2;
+    console.log(result);
+}
+const output:void = doubleItAndConsoleLogIt(10);
+console.log(output);
+
+const multiply = (x: number, y: number): number => x * y;
+
+let multiply2: (x: number, y: number) => number;
+multiply2 = (a, b) => a * b;
