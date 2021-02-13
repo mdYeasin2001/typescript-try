@@ -14,3 +14,30 @@ const famous: boolean = false;
 
 
 age = 100;
+
+
+
+
+// apply typescript on function
+function add(num1, num2){
+    return num1 + num2;
+}
+add(3, 12);
+add('Harry', 'Potter');
+
+function add2(num1: number, num2: number){
+    return num1 + num2;
+}
+add2(3, 12);
+// add2('Harry', 'Max'); // caught an error of type mistake
+
+function add3(num1: number | string, num2: number | string){
+    return num1 + num2;
+}
+
+function add4(firstName: string, lastName: string): string{
+    return firstName + lastName;
+}
+
+const user = add4('Harry', 'Hero'); 
+// const user2: number = add4('Harry', 'Hero'); // show an error because it a string type mistake
