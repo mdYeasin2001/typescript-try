@@ -170,6 +170,4 @@ class Person{
 const person1 = new Person('Doe', 'Doe Ban')
 console.log(person1);
 
-console.log(person1);
-
 
