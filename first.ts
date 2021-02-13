@@ -148,3 +148,28 @@ function getBonus2(player: Player){
     return player.salary * 2;
 }
 
+
+
+
+
+// apply typeScript on class
+
+class Person{
+    name: string;
+    private _Partner: string;
+    readonly fatherName: string;
+    constructor(name: string, father: string){
+        this.name = name;
+        this.fatherName = father;
+        this._Partner = name;
+    }
+    getFullName(){
+        return this.name;
+    }
+}
+const person1 = new Person('Doe', 'Doe Ban')
+console.log(person1);
+
+console.log(person1);
+
+
